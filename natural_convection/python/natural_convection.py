@@ -76,7 +76,7 @@ tiempo = array([tiempo_2-tiempo_1])
 #~ print "T",th
 #~ print "tiempo en python: ", tiempo
 savetxt('Temp.txt', th,fmt='%.4f') # Se guarda la temperatura
-savetxt('Temp.txt', tiempo,fmt='%.2f') # Se guarda la temperatura
+savetxt('Tiempo.txt', tiempo,fmt='%.2f') # Se guarda la temperatura
 savetxt('rho.txt', rho,fmt='%.4f') # Se guarda la densidad
 savetxt('velx.txt', u,fmt='%.10f') # Se guarda la velocidad x
 savetxt('vely.txt', v,fmt='%.10f') # Se guarda la velocidad y

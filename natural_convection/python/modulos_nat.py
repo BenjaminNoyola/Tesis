@@ -86,7 +86,7 @@ def calc_rho_u_v(f,rho,u,v,cx,cy,n,m):
             u[i,j] = usum/rho[i,j]
             v[i,j] = vsum/rho[i,j]
     return rho,u,v
-#campo de temperatura................................................................
+#campo de flujo................................................................
 @jit
 def colisiong(u,v,g,geq,th,omegat,w,cx,cy,n,m):
     geq=zeros([9,n,m])
