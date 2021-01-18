@@ -16,4 +16,3 @@ ejecutar dentro de la carpeta "fortran"
 En cualquiera de las carpetas anteriores se encuantra un archivo llamado "Grafico_2D.py" se ejecuta de la siguiente manera:
 
     "python Grafico_2D.py"
-    
