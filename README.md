@@ -1,4 +1,6 @@
-# Implementación de la solución de un problema de convección natural
+# Implementación de la solución de un problema de convección natural y difusión
+
+Estas implementaciones están basadas en el líbro de [A. A. Mohamad, Lattice Boltzmann Method, Springen, 2011]
 
 ## Implementación en python
 ejecutar el código dentro de la carpeta "python" o "python_nopy" el resultado será el mismo:
