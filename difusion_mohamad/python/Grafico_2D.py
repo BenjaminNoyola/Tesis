@@ -1,12 +1,9 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
 # Autor: Benjamín Salomón Noyola García
 # Tema: Gráfico 2D.
 
 import numpy as np
 from StringIO import StringIO 
 import matplotlib.pyplot as plt
-
 
 # Aqui importamos la matriz que deseamos graficar a partir del archivo de texto: "solucion.Res"
 

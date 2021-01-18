@@ -1,5 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
 # Autor: Benjamín Salomón Noyola García
 # Tema: Gráfico 2D.
 
@@ -10,10 +8,6 @@ import matplotlib.pyplot as plt
 
 # Aqui importamos la matriz que deseamos graficar a partir del archivo de texto: "solucion.Res"
 
-#~ pfile=open('T_7.txt','r') 
-#~ pfile=open('den_7.txt','r') 
-#~ pfile=open('nor_u_7.txt','r') 
-#~ pfile=open('vel_ux_7.txt','r') 
 pfile=open('strf.txt','r') 
 data=pfile.read()
 pfile.close()

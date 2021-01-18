@@ -1,25 +1,17 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
 # Autor: Benjamín Salomón Noyola García
 # Tema: Gráfico 2D.
 
 import numpy as np
-from StringIO import StringIO 
+from io import StringIO 
 import matplotlib.pyplot as plt
-
 
 # Aqui importamos la matriz que deseamos graficar a partir del archivo de texto: "solucion.Res"
 
-#~ pfile=open('T_7.txt','r') 
-#~ pfile=open('den_7.txt','r') 
-#~ pfile=open('nor_u_7.txt','r') 
-#~ pfile=open('vel_ux_7.txt','r') 
 pfile=open('strf.txt','r') 
 data=pfile.read()
 pfile.close()
 data=np.genfromtxt(StringIO(data))
 n=len(data)
-##print n
 data_c = np.copy(data)
 
 for i in range(n):

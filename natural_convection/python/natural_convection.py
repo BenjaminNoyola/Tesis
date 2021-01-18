@@ -50,8 +50,6 @@ for kk in range(mstep):#mstep):
     f=propagacion(f,n,m)
     f=c_fronf(f,n,m)
     rho, u, v = calc_rho_u_v(f,rho,u,v,cx,cy,n,m)
-    #print f[1,0,1]
-#    
     g=colisiong(u,v,g,geq,th,omegat,w,cx,cy,n,m)    #campo de temperatura
     g=propagacion(g,n,m)
     g=c_frong(g,tw,w,n,m)
@@ -66,14 +64,8 @@ for j in range(m):
     for i in range(1,n):
         rhom=0.5*(rho[i,j]+rho[i-1,j])
         strf[i,j]=strf[i-1,j]+rhom*0.5*(u[i-1,j]+u[i,j])
-#strf=-1*strf        
 tiempo_2=time.time()
 tiempo = array([tiempo_2-tiempo_1])
-#~ print g
-#~ print "rho",rho
-#~ print "u",u
-#~ print "v",v
-#~ print "T",th
 #~ print "tiempo en python: ", tiempo
 savetxt('Temp.txt', th,fmt='%.4f') # Se guarda la temperatura
 savetxt('Tiempo.txt', tiempo,fmt='%.2f') # Se guarda la temperatura

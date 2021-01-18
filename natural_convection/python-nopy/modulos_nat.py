@@ -1,6 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 # Autor: Benjamín S. Noyola García
 # Tema: modulos de change_phase.py
 from numpy import *
@@ -22,7 +19,6 @@ def colisionf(u,v,f,feq,rho,omega,w,cx,cy,n,m,th,gbeta):
                 feq[k,i,j]=rho[i,j]*w[k]*(1.0+3.0*t2+4.50*t2*t2-1.50*t1)
                 f[k,i,j]=omega*feq[k,i,j]+(1.-omega)*f[k,i,j]+force
     return f
-
 
 @jit(nopython=True, parallel=True)
 def propagacion(f,n,m):
@@ -49,8 +45,6 @@ def propagacion(f,n,m):
             f[8,i,j] = f[8,i-1,j-1]
     return f
 
-
-
 @jit(nopython=True, parallel=True)
 def c_fronf(f,n,m):
     for i in range(n):          
@@ -71,7 +65,6 @@ def c_fronf(f,n,m):
         f[7,0,j] = f[5,0,j]
         f[8,0,j] = f[6,0,j]
     return f
-
 
 @jit
 def calc_rho_u_v(f,rho,u,v,cx,cy,n,m):
@@ -96,8 +89,6 @@ def colisiong(u,v,g,geq,th,omegat,w,cx,cy,n,m):
                 geq[k,i,j]=th[i,j]*w[k]*(1.0+3.0*(u[i,j]*cx[k]+v[i,j]*cy[k]))
                 g[k,i,j]=omegat*geq[k,i,j]+(1.0-omegat)*g[k,i,j]
     return g
-
-
 
 @jit(nopython=True, parallel=True)
 def c_frong(g,tw,w,n,m):
@@ -132,7 +123,6 @@ def c_frong(g,tw,w,n,m):
         g[8,n-1,j] = g[8,n-2,j]        
 
     return g
-
 
 @jit
 def calc_T(g,n,m):

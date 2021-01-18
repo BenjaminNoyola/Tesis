@@ -1,6 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 # Autor: Benjamín S. Noyola García
 # Tema: En este código se implementan condiciones de frontera diferentes
 # a las propuestas en el libro de Mohamad, se pueden observar del art de ref 31.

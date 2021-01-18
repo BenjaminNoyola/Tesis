@@ -69,12 +69,6 @@ for j in range(m):
 #strf=-1*strf        
 tiempo_2=time.time()
 tiempo = array([tiempo_2-tiempo_1])
-#~ print g
-#~ print "rho",rho
-#~ print "u",u
-#~ print "v",v
-#~ print "T",th
-#~ print "tiempo en python: ", tiempo
 savetxt('Temp.txt', th,fmt='%.4f') # Se guarda la temperatura
 savetxt('Temp.txt', tiempo,fmt='%.2f') # Se guarda la temperatura
 savetxt('rho.txt', rho,fmt='%.4f') # Se guarda la densidad

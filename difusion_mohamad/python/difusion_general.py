@@ -1,8 +1,4 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 # Autor: Benjamín S. Noyola García
-# Tema: 
 
 from numpy import *
 import matplotlib.pyplot as plt

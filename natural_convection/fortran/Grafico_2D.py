@@ -1,12 +1,9 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
 # Autor: Benjamín Salomón Noyola García
 # Tema: Gráfico 2D.
 
 import numpy as np
 from StringIO import StringIO 
 import matplotlib.pyplot as plt
-
 
 # Aqui importamos la matriz que deseamos graficar a partir del archivo de texto: "solucion.Res"
 
@@ -19,7 +16,6 @@ pfile=open('strf','r')
 data=pfile.read()
 pfile.close()
 data=np.genfromtxt(StringIO(data))
-
 
 #Aquí graficamos el contorno de Isotermas; Esta es la solución contenida en forma matricial 
 #en el archivo de texto importado anteriormente y guardado en "data".

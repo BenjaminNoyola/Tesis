@@ -1,6 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 # Autor: Benjamín S. Noyola García
 # Tema: modulos de change_phase.py
 from numpy import *
