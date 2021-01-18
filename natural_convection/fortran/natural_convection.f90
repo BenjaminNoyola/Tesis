@@ -267,8 +267,6 @@ subroutine rhouv(f,rho,u,v,cx,cy,n,m)
 return
 end
 
-
-
 subroutine result(u,v,rho,th,uo,n,m,ra)
     real u(0:n,0:m),v(0:n,0:m),th(0:n,0:m)
     real strf(0:n,0:m),rho(0:n,0:m)

@@ -66,7 +66,7 @@ for j in range(m):
     for i in range(1,n):
         rhom=0.5*(rho[i,j]+rho[i-1,j])
         strf[i,j]=strf[i-1,j]+rhom*0.5*(u[i-1,j]+u[i,j])
-#strf=-1*strf        
+strf=-1*strf        #################################################
 tiempo_2=time.time()
 tiempo = array([tiempo_2-tiempo_1])
 savetxt('Temp.txt', th,fmt='%.4f') # Se guarda la temperatura

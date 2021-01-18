@@ -1,6 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 # Autor: Benjamín S. Noyola García
 
 from numpy import *
@@ -66,6 +63,7 @@ for j in range(m):
         strf[i,j]=strf[i-1,j]+rhom*0.5*(u[i-1,j]+u[i,j])
 tiempo_2=time.time()
 tiempo = array([tiempo_2-tiempo_1])
+strf=-1*strf        #################################################
 #~ print "tiempo en python: ", tiempo
 savetxt('Temp.txt', th,fmt='%.4f') # Se guarda la temperatura
 savetxt('Tiempo.txt', tiempo,fmt='%.2f') # Se guarda la temperatura

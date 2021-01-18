@@ -2,7 +2,7 @@
 # Tema: Gráfico 2D.
 
 import numpy as np
-from StringIO import StringIO 
+from io import StringIO 
 import matplotlib.pyplot as plt
 
 
