@@ -20,7 +20,6 @@ def colisionf(u,v,f,feq,rho,omega,w,cx,cy,n,m,th,gbeta):
                 f[k,i,j]=omega*feq[k,i,j]+(1.-omega)*f[k,i,j]+force
     return f
 
-
 @jit
 def propagacion(f,n,m):
     for i in range(n):
