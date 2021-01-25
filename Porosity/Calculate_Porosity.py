@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from RecPore2D import RndPore2D as rndp
 
-# Modificar éstos parámetros:
+######################################################################################
+# Modificar éstos parámetros si es requerido:
 a = rndp(lx=128., ly=128., rmin=0.5, rmax=2.0, target_porosity = 0.368, packing='rnd')
+######################################################################################
 
 a.size = 0.001
 pmin = [0.0,   0.0,   0.0 ]
@@ -36,4 +38,4 @@ fig.canvas.draw()
 ax.margins(0)
 ax.tick_params(which='both', direction='in')
 
-fig.savefig('plotcircles.png', dpi=my_dpi) 
+fig.savefig('plotcircles.png', dpi=my_dpi)

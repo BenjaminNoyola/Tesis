@@ -38,3 +38,19 @@ ejecutar dentro de la carpeta "fortran"
 
     "gfortran -o ejecutable difusion.f90"
     "./ejecutable"
+
+# Generación de imágenes con porosidad no homogénea
+
+
+Ingresa al directorio /Porosity y se ejecuta el siguiente comando:
+
+    "python Calculate_Porosity.py"
+
+Si se requieren obtener nuevas simulaciones, entonces modificar los parámetros:
+
+    "a = rndp(lx=128., ly=128., rmin=0.5, rmax=2.0, target_porosity = 0.368, packing='rnd')"
+
+donde "lx" es la dimensión x de la resolución de la imagen, "ly" es la dimensión y de la imagen, "rmin" es el radio 
+mínimo de la partícula, al generarse aleatoriamente, "rmax" es el radio máximo. "target_porosity" es la porosidad 
+buscada en la imagen, "packing" es la técnica de generación de la porosidad, "rnd" se refiere a que se hará un empacado 
+aleatorio para obtener la imagen porosa.
