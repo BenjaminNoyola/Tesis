@@ -4,16 +4,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from RecPore2D import RndPore2D as rndp
 
-
-# ~ i, kk = float(sys.argv[1]), 0
-# ~ while i <=0.3:
-    # ~ for j in range(50):
+# Modificar éstos parámetros:
 a = rndp(lx=128., ly=128., rmin=0.5, rmax=2.0, target_porosity = 0.368, packing='rnd')
+
 a.size = 0.001
 pmin = [0.0,   0.0,   0.0 ]
 pmax = [128.0, 128.0, 0.0 ]
-a.bounding_box = [pmin, pmax]        
-#a._pack_rnd()
+a.bounding_box = [pmin, pmax]
 a.write_mesh(fname='rnd.geo', meshtype='gmsh')
 
 df = pd.read_csv("out.csv")
@@ -40,11 +37,3 @@ ax.margins(0)
 ax.tick_params(which='both', direction='in')
 
 fig.savefig('plotcircles.png', dpi=my_dpi) 
-        # ~ print "kk: ", kk
-        # ~ kk = kk+1
-    # ~ i = i + 0.02
-    
-# poner en un while, para automatizar la creacion de las imagenes.
-# con pandas guardar circles, para luego graficar circles, como se observa en la carpeta prueba.
-# luego continuar con tl procedimiento de IA.   
-
